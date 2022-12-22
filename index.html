@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SK GAMING HUB</title>
+    <link rel="icon" href="new favicon by dhruv.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8cea380a74.js" crossorigin="anonymous"></script> 
+    <script src="main.js"></script>
+</head>
+<body>
+    <header class="showcase" id="bg">
+        <div class="showcase-top">
+            <img class="logo" src="new logo by dhruv.png" alt="Netflix Logo">
+            <a href="#tic-tac-toe" class="btn btn-rounded">Tic Tac Toe</a>
+            <a href="#snake-and-food" class="btn btn-snake">Snake and Food</a>
+            <a href="#bubble" class="btn btn-bubble">Bubble Shooter</a>
+            <a href="#chess" class="btn btn-chess">Online Chess</a>
+        </div>
+        <div class="showcase-content">
+            <h1>Welcome to SK GAMING HUB</h1>
+            <h3>It's for everyone, not just gamers.</h3>
+            <p>Play interesting games for free.</p>
+        </div>
+    </header>
+    <section class="style-cards">
+        <div class="card-0">
+            <video class="video-2" autoplay="" playsinline="" muted="" loop=""><source src="girl playing games(1).mp4" type="video/mp4"></video>
+            <div class="desc-0">
+                <h1>Our Website</h1>
+                <h3>This website is designed to provide you with 4 Great and immersive games:
+                    <br>
+                    <a href="https://yandex.com/games/app/166715#app-id=166715&catalog-session-uid=catalog-8e01b5dd-9cd8-596c-a176-7598e4b3ddaa-1668250919519-76cc&rtx-reqid=12591668207607104154&pos=%7B%22listType%22%3A%22suggested%22%2C%22tabCategory%22%3A%22balloons%22%7D" class="intro-bubble">Bubble Shooter</a><br>
+                    <a href="https://playtictactoe.org/" class="intro-ttt">Tic Tac Toe</a><br>
+                    <a href="https://www.culinaryschools.org/kids-games/fruit-snake/" class="intro-snake">Snake and Food</a><br>
+                    <a href="https://www.chess.com/play/computer" class="intro-chess">Online Chess</a>
+                </h3>
+            </div>
+        </div>
+        <div class="card-1" id="bubble">
+            <div class="desc-1">
+                <h1>Bubble Shooter</h1>
+                <h3>Bubble Shooters - This is the most classic and amazing shooting bubble buster game. This bubble shooter will eliminate your boredom in no time! 
+                </h3>
+                <h3 id="bubble-desc">You’ll spend hours of fun popping same-colored bubbles! Just shoot all the colorful bubbles to clear the board and win coins! Use epic boosters to burst all the bubbles and solve the tricky puzzles!</h3>
+                <button id="bubble-btn" onclick="morebubble()">MORE..</button>
+            </div>
+            <a class="play-bs" href="https://yandex.com/games/app/166715#app-id=166715&catalog-session-uid=catalog-8e01b5dd-9cd8-596c-a176-7598e4b3ddaa-1668250919519-76cc&rtx-reqid=12591668207607104154&pos=%7B%22listType%22%3A%22suggested%22%2C%22tabCategory%22%3A%22balloons%22%7D">PLAY</a>
+            <img src="bubble shooter.png">
+        </div>
+        <div class="card-2" id="tic-tac-toe">
+            <img src="ttt logo(4).png">
+            <div class="desc-2">
+                <h1>Tic Tac Toe</h1>
+                <h3>You probably already know how to play Tic-Tac-Toe. It's a really simple game, right? That's what most people think. But if you really wrap your brain around it, you'll discover that Tic-Tac-Toe isn't quite as simple as you think!</h3>
+                    <h3 id="ttt-desc">Tic-Tac -Toe, or Xs and Os (Canadian or Irish English) is a paper-and-pencil game for two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.</h3>
+                    <button id="ttt-btn" onclick="morettt()">MORE..</button>
+                </div>
+                <a class="play-ttt" href="https://playtictactoe.org/">PLAY</a>
+            </div>
+        <div class="card-3" id="snake-and-food">
+            <div class="desc-3">
+                <h1>Snake and Food
+                </h1>
+                <h3>You (the player) control a virtual "snake" which roams around its little world eating food pellets and trying to avoid its demise by running into itself or the edges of the world.</h3>
+                <h3 id="snake-desc">With each food pellet you (the "snake") eat, you grow stronger and larger; in turn making it increasingly difficult for you (the "snake") to continue your existance. When you manage to consume 10 food pellets, you will be promoted to the next level.</h3>
+                <button id="snake-btn" onclick="moresnake()">MORE..</button>
+            </div>
+            <a class="play-sf" href="https://www.culinaryschools.org/kids-games/fruit-snake/">PLAY</a>
+            <img src="snake game.png" alt="Device-Pile-In">
+        </div>
+        <div class="card-4" id="chess">
+            <div class="desc-4">
+                <h1>Online Chess
+                </h1>
+                <h3>Chess, one of the oldest and most popular board games, played by two opponents on a checkered board with specially designed pieces of contrasting colours, commonly white and black. </h3>
+                <h3 id="chess-desc">White moves first, after which the players alternate turns in accordance with fixed rules, each player attempting to force the opponent’s principal piece, the King, into checkmate—a position where it is unable to avoid capture.</h3>
+                <button id="chess-btn" onclick="morechess()">MORE..</button>
+            </div>
+            <a class="play-chess" href="https://www.chess.com/play/computer">PLAY</a>
+            <video class="video-2" autoplay="" playsinline="" muted="" loop=""><source src="chess game.mp4" type="video/mp4"></video>
+        </div>
+
+    </section>
+    <footer id="help">
+        <div class="main-cont">
+            <div class="left bux">
+                <h2>SK <span style="color:#8d99ae">GAMING</span> HUB</h2>
+                <div class="cont">
+                    <p>You can contact us give us your feedback,review and share your ideas with us that how we can improve.</p>
+                </div>
+                <div class="socia">
+                    <a href="#"><i class="fa-brands fa-facebook" id="fb"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram" id="ig"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin" id="lk"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter" id="tw"></i></a>
+                </div>
+            </div>
+            <div class="center bux">
+                <h2>Contact</h2>
+                    <div class="adress">
+                        <div class="place">
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <span>RK Ashram, New Delhi</span>
+                        </div>
+                        <div class="phone">
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <span>+91-9811943782</span>
+                        </div>
+                        <div class="mail">
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <span>kanishk.kumar.ug21@gmail.com</span>
+                        </div>
+                    </div>
+            </div>
+            <div class="right bux">
+                <h2>Drop a message !</h2>
+                <div class="contents">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">Email</div>
+                            <input type="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">Message</div>
+                            <textarea rows="5" columns="35"  required ></textarea>
+                        </div>
+                        <div class="butt">
+                            <button type="submit" class="send">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

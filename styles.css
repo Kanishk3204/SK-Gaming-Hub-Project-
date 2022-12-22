@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #999999;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4{
+    color: #ffffff;
+}
+
+h3
+{
+    font-weight: lighter;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p{
+    margin: 0.5rem 0;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+img{
+    width: 100%;
+}
+
+.showcase{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    animation:change 8s alternate-reverse infinite;  
+}
+@keyframes change{
+    0%{background: url("bg7(1).jpg") center center/cover}
+    20%{background: url("bg3(1).jpg") center center/cover}
+    40%{background: url("bg4.jpg") center center/cover}
+    60%{background: url("bg8(2).jpg") center center/cover}
+    80%{background: url("bg12(1).jpg") center center/cover}
+    100%{background: url("bg13.jpg")  center center/cover};
+}
+.showcase::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 0px 20px #000000 , inset -10px -10px 20px #000000;
+}
+
+.showcase-top{
+    position: relative;
+    height: 90px;
+    z-index: 2;
+}
+
+.showcase-top img{
+    width: 10%;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translate(2% , -260%);
+}
+.showcase-top .btn-rounded{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(-270% , -1010%);
+}
+.showcase-top .btn-snake
+{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(-100% , -1010%);
+}
+.showcase-top .btn-bubble
+{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(-300% , -1010%);
+}
+.showcase-top .btn-chess
+{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(-10% , -1010%);
+}
+.showcase-content{
+    position: relative;
+    margin: 0 26%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 9rem;
+}
+
+.showcase-content h1{
+    font-weight: 700;
+    font-size: 500%;
+    margin: 0 30px;
+    max-width: 800px;
+    line-height: 74.5px;
+    font-family: 'Signika', sans-serif;
+    position: relative;
+    bottom: 70px;
+}
+
+.showcase-content h3{
+    color: white;
+    font-size: 300%;
+    margin: 16px 0;
+}
+
+.showcase-content p{
+    font-size: 200%;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    color: aqua;
+}
+
+.showcase-content input{
+    position: absolute;
+    left: 0;
+    bottom: -8vh;
+    width: 454px;
+    height: 3rem;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+.btn{
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+     text-align: center;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+    position: fixed;
+    opacity: 0.8;
+}
+.btn:hover{
+    opacity: 1;
+}
+.btn-rounded{
+    border-radius: 100px;
+    background-color: #1499d7;
+}
+.btn-snake{
+    background-color: #09ff4eae;
+    border-radius: 100px;
+    position: fixed;
+}
+.btn-bubble{
+    background-color: #f84cc4;
+    border-radius: 100px;
+    opacity: 0.8;
+}
+.btn-chess{
+    background-color: #ffae00d4;
+    border-radius: 100px;
+}
+.card-0 , 
+.card-1,
+.card-2,
+.card-3,
+.card-4{
+    border-top: 8px rgb(0, 0, 0) solid;
+    padding: 50px;
+}
+.card-0{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+    background-color: #000000;
+}
+.card-0 video{
+    height: 100%;
+    width: 100%;
+}
+.desc-0{
+    padding-left: 100px;
+}
+.card-1{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+    background: url("bg game3.jpeg") center center/cover;
+}
+.desc-1{
+    padding-left: 100px;
+}
+.style-cards h1
+{
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.style-cards h3{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+.card-1 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+    height: 350px;
+    width: 350px;
+    position: relative;
+    left: 20%;
+}
+.card-2{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 40% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+    background: url("ttt game9.jpg") center local;
+}
+.card-2 img{
+    height: 90%;
+    width: 80%;
+}
+.card-3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+    animation:sf 8s alternate-reverse infinite;
+}
+@keyframes sf{
+    0%{background: url("sf game1.png") center center/cover}
+    50%{background: url("sf game2.png") center center/cover}
+    100%{background: url("sfgame 3.png") center center/cover};
+}
+.desc-3{
+    padding-left: 80px;
+    padding-right: 20px;
+}
+.card-3 img{
+    width: 110%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+.card-4 video{
+    width: 100%;
+    height: 100%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    position: relative;
+    left: 10%;
+}
+.card-4{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+    background: url("chess game(4).webp")  center center/cover;
+}
+.desc-4{
+    padding-left: 80px;
+    padding-right: 20px;
+}
+.card-4 img{
+    width: 110%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+.desc-2{
+   padding: 0 18px;
+   overflow: hidden;
+}
+#ttt-btn,#snake-btn,#chess-btn,#bubble-btn{
+    background-color: #09ff4e00;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 200;
+    border: none;
+    color: #eeeeee;
+}
+#ttt-btn:hover,#snake-btn:hover,#chess-btn:hover,#bubble-btn:hover{
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: #1499d7;
+}
+.play-ttt{
+    position: relative;
+    top: 0px;
+    font-size: 28px;
+    left: 100%;
+    bottom: 50%;
+    text-align: center;
+    background-color: #000000;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 40%;
+}
+:hover.play-ttt,:hover.play-bs,:hover.play-chess,:hover.play-sf{
+    background-color: #ffffff;
+    color: #000000;
+    transition: ease-in-out 0.4s;
+    font-size: 35px;
+}
+.play-sf
+{
+    position: relative;
+    top: 0px;
+    font-size: 28px;
+    left: 80%;
+    bottom: 50%;
+    text-align: center;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 30%;
+    background-color: #000000b6;
+}
+
+.play-chess{
+    position: relative;
+    top: 30px;
+    font-size: 28px;
+    left: 80%;
+    bottom: 50%;
+    text-align: center;
+    background-color: #000000d4;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 30%;
+}
+
+.play-bs{
+    position: relative;
+    top: 30px;
+    font-size: 28px;
+    left: 80%;
+    bottom: 50%;
+    text-align: center;
+    background-color: #000000;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 30%;
+}
+
+#ttt-desc,#bubble-desc,#snake-desc,#chess-desc
+{
+    display:  none;
+    transition: ease-out 0.6s;
+    overflow: hidden;
+}
+.intro-bubble:hover{
+    background-color: #eeeeee;
+    color: #f84cc4;
+    transition: ease-in-out 0.4s;
+    border-radius: 100px;
+    margin: 10px;
+    padding: 0px 10px;
+}
+.intro-ttt:hover{
+    background-color: #eeeeee;
+    color: #1499d7;
+    transition: ease-in-out 0.4s;
+    border-radius: 100px;
+    margin: 10px;
+    padding: 0px 10px; 
+}
+.intro-snake:hover{
+    background-color: #eeeeee;
+    color: #00b333;
+    transition: ease-in-out 0.4s;
+    border-radius: 100px;
+    margin: 10px;
+    padding: 0px 10px; 
+}
+.intro-chess:hover{
+    background-color: #eeeeee;
+    color: #bb8001d0;
+    transition: ease-in-out 0.4s;
+    border-radius: 100px;
+    margin: 10px;
+    padding: 0px 10px; 
+}
+footer{
+    background-color: #121315;
+    color: #a7a7a7;
+    font-size: 16px;
+    min-height:100px;
+    width:100%;
+    bottom: 0;
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+.main-cont{
+    display:flex;
+}
+.main-cont .bux{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.bux h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom:10px;
+}
+.cont p{
+    color: #a7a7a7;
+}
+.bux .cont{
+    color: #a7a7a7;
+    margin: 20px 0 0 0;
+}
+.place{
+    padding:5px;
+}
+.phone{
+    padding:5px;
+}
+.mail{
+    padding:5px;
+}
+.place span{
+    margin: 5px ;
+    padding:5px;
+    text-align: justify;
+    /* padding: 20px; */
+}
+.phone span{
+    margin: 5px ;
+    margin-bottom:5px;
+    padding:5px;
+    text-align: justify;
+}
+.mail span{
+    margin: 5px ;
+    margin-bottom:5px;
+    padding:5px;
+    text-align: justify;
+}
+.socia{
+    margin: 20px 0 0 0 ;
+}
+
+.socia a{
+    padding: 0 20px;
+    transition: transform 0.5s ;
+}
+.socia a i{
+    height: 40px;
+    width: 40px;
+    background:#342f2f;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius:5px;
+    transition: transform 0.5s ;
+}
+.socia a #tw:hover{
+    transform: scale(1.3);
+    background-color: #1499d7;
+}
+.socia a #fb:hover{
+    transform: scale(1.3);
+    background-color: #037dff;
+}
+.socia a #ig:hover{
+    transform: scale(1.3);
+    background-color: #cb27ad;
+}
+.socia a #lk:hover{
+    transform: scale(1.3);
+    background-color: #0333cf;
+}
+.butt{
+    padding-top:10px;
+}
+textarea{
+    height:65px;
+    width:300px;
+    resize: none;
+}
+.send{
+    padding:5px;
+    font-size:15px;
+}
